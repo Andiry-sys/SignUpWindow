@@ -1,0 +1,48 @@
+﻿<Window x:Class="SignUpWindow.MainWindow"
+        ResizeMode="NoResize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SignUpWindow"
+        mc:Ignorable="d"
+        
+        Title="Sign Up" Height="251.432" Width="431.233" Loaded="Window_Loaded">
+    <Grid Background="#FF1D1919" HorizontalAlignment="Left" Width="421">
+        <Label Content="Username:" HorizontalAlignment="Left" Height="40" Margin="24,24,0,0" VerticalAlignment="Top" Width="87" Foreground="White" FontSize="16"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Height="40" Margin="24,64,0,0" VerticalAlignment="Top" Width="87" Foreground="White" FontSize="16" RenderTransformOrigin="0.656,2.174"/>
+        <TextBox HorizontalAlignment="Left"  Name ="textBoxUserName" Height="23" Margin="132,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="259" FontSize="14">
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <CheckBox Content="Remember me" Name="checkBoxRememberMe" HorizontalAlignment="Left" Margin="36,104,0,0" VerticalAlignment="Top" Height="21" Width="120" FontSize="14" Foreground="White"/>
+        
+        <Button Content="Log in" Name="buttonLogIn"  HorizontalAlignment="Left" Margin="61,142,0,0" VerticalAlignment="Top" Width="112" Height="38" FontSize="14" Background="#FF65C32F" Foreground="White" Click="buttonLogIn_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+
+                </Style>
+            </Button.Resources>
+        </Button >
+            <Button Content="Cancel" Name="buttonCancel" HorizontalAlignment="Left" Margin="257,142,0,0" VerticalAlignment="Top" Width="112" Height="38" Background="#FFA20C0C" BorderBrush="WhiteSmoke" Foreground="White" FontSize="16" RenderTransformOrigin="0.672,0.608" Click="buttonCancel_Click">
+        <Button.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="10"/>
+
+            </Style>
+        </Button.Resources>
+        </Button >
+        <PasswordBox Name="textBoxPassword" HorizontalAlignment="Left" Margin="132,64,0,0" VerticalAlignment="Top" Width="259">
+            <PasswordBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </PasswordBox.Resources>
+        </PasswordBox>
+
+    </Grid>
+</Window>
